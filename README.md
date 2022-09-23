@@ -46,3 +46,13 @@ about-title элемент блока title блок
 удалить вконце styles.css
 перебрать все VAR - var(--main-txt-cl);
 разобраться с позиционированием в меню? не работает header active-page
+сделать один класс для кнопки --- btn-modal-submit
+
+
+
+
+Шляпа ведь????
+.clients, .team, .services, .features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} 

@@ -2,36 +2,11 @@
 @import './utils/general';
 @import './components/logo';
 @import './components/header';
+@import './components/hero';
 @import './components/button';
-
-
-
-// .about {
-//     margin: 8px;
-// }
-
-// .about__text {
-//     background-color: $background_color;
-// }
-
-// .about__logo {
-//     background-image: url(../images/box-1.jpg);
-// }
-
-// .about__link {
-//     text-decoration: none;
-
-//     &:hover {
-//         color: red;
-//     }
-
-//     & & {
-//         color: black;
-//     }
-// }
-
-
-// Обратите внимание на то, что мы используем @import 'components/logo' в файле main.scss. 
-// При импорте фрагмента не нужно указывать расширение .scss и нижнее подчёркивание, 
-// SASS-компилятор догадается сам и найдёт этот файл. Главное задать правильный относительный путь.
-
+@import './components/features';
+@import './components/services';
+@import './components/team';
+@import './components/clients';
+@import './components/portfolio';
+@import './components/footer';

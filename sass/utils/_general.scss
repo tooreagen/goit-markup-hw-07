@@ -1,4 +1,3 @@
-/* Main content container*/
 %container {
   width: 1200px;
   margin: 0 auto;
@@ -6,7 +5,7 @@
   padding-right: 15px;
 }
 
-.section {
+%section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -15,8 +14,8 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   
-  color: var(--main-txt-cl);
-  background-color: var(--bg-cl);
+  color: $main_text_color;
+  background-color: $background_color;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
