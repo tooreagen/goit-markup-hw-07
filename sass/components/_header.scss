@@ -1,0 +1,145 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  margin-left: 93px;  
+}
+
+.header__item {
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.header__link {
+  @extend %link;
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--anim-duration) var(--anim-ttf);
+
+  color: var(--heading-txt-cl);
+
+  &:hover, &:focus {
+    color: $accent_color;
+  }
+
+  // animation link
+  &--animation::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+
+    transition: transform var(--anim-duration) var(--anim-ttf);
+    transform: scale(0);
+
+    background-color: $accent_color;
+    border-radius: 2px;
+  }
+
+  &--animation:hover::after,
+  &--animation:focus::after {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* selecteded active page */
+.header__link--active-page {
+  color: $accent_color;
+}
+
+.header__link--active-page::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: $accent_color;
+  border-radius: 2px;
+}
+
+/* end selecteded active page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__contact {
+  display: flex;
+}
+
+.header__mail, .header__telephone {
+  @extend %link;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--anim-duration) var(--anim-ttf);
+
+  color: $main_text_color;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent_color;
+  }
+}
+
+.header__icon {
+  margin-right: 10px;
+}

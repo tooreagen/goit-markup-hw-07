@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 32px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  transition: background-color var(--anim-duration) var(--anim-ttf);
+
+  color: $white_text_color;
+  background: $accent_color;
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $button_hover_color;
+}
