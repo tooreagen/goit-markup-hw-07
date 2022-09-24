@@ -1,17 +1,21 @@
-%container {
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%link {
+  text-decoration: none;
+}
+
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-%section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $main_font;
   letter-spacing: 0.03em;
   
   color: $main_text_color;
@@ -30,11 +34,7 @@ img {
     height: auto;
 }
 
-%link {
-  text-decoration: none;
-}
-
-/* semantic hidden header */
+// semantic hidden header
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -46,4 +46,14 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+// section heading
+.section-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: $heading_text_color;
 }

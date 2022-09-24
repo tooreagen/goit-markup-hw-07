@@ -10,14 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <!-- Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
   <!-- Header (logo, menu) -->
     <header class="header">
-      <div class="header__container">
+      <div class="header__container container">
         <!-- Menu Nav -->
         <nav class="header__nav">
           <!-- Logo -->
@@ -26,13 +27,13 @@
           </a>
           <ul class="header__menu">
             <li class="header__item">
-              <a class="header__link header__link--animation" href="./index.html">Студія</a>
+              <a class="header__link" href="./index.html">Студія</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link--animation header__link--active-page" href="./portfolio.html">Портфоліо</a>
+              <a class="header__link header__link--active-page" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link--animation" href="">Контакти</a>
+              <a class="header__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +64,7 @@
 <main>
   <!-- Portfolio  -->
   <section class="portfolio">
-    <div class="portfolio__container">
+    <div class="container">
       <h1 class="visually-hidden">Наше портфоліо</h1>
       <!-- Filter button -->
       <ul class="filter-list">
@@ -219,7 +220,7 @@
 
 <!-- Footer (logo, contacts) -->
     <footer class="footer">
-      <div class="footer__container">
+      <div class="container">
         <!-- logo, contacts -->
         <div class="footer__blocks">
           <div>
@@ -289,7 +290,7 @@
             <div class="subscribe__group">
               <input class="subscribe__email" type="email" name="subscribe-email" id="subscribe-email"
                 placeholder="E-mail" />
-              <button class="subscribe__button" type="submit" value="Підписатися">
+              <button class="button subscribe__button--alignment" type="submit" value="Підписатися">
                 Підписатися
                 <svg class="subscribe-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>

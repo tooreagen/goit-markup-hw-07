@@ -3,11 +3,7 @@
     background: $background_team;
 }
 
-.services__container {
-    @extend %container;
-}
-
-.team__heading {
+.section-heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -67,7 +63,7 @@
     width: 44px;
     height: 44px;
 
-    transition: fill var(--anim-duration) var(--anim-ttf), background-color var(--anim-duration) var(--anim-ttf);
+    transition: fill $animation-duration $animation-ttf, background-color $animation-duration $animation-ttf;
 
     fill: $icon_color;
     border-radius: 50%;

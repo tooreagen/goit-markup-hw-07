@@ -3,10 +3,6 @@
     padding-bottom: 0;
 }
 
-.features__container {
-    @extend %container;
-}
-
 .features__list {
     display: flex;
 }

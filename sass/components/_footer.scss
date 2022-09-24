@@ -5,10 +5,6 @@
     background: $hero_footer_background;
 }
 
-.footer__container {
-    @extend %container;
-}
-
 .footer__blocks {
     display: flex;
     align-items: baseline;
@@ -30,7 +26,7 @@
     font-size: 14px;
     line-height: 1.71;
 
-    transition: color var(--anim-duration) var(--anim-ttf);
+    transition: color $animation-duration $animation-ttf;
 
     color: rgba(255, 255, 255, 0.6);
 
@@ -75,7 +71,7 @@
     width: 44px;
     height: 44px;
 
-    transition: background-color var(--anim-duration) var(--anim-ttf);
+    transition: background-color $animation-duration $animation-ttf;
 
     fill: $background_color;
 

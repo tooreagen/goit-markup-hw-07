@@ -2,11 +2,7 @@
     @extend %section;
 }
 
-.services__container {
-    @extend %container;
-}
-
-.services__heading {
+.section-heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;

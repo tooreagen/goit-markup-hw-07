@@ -2,11 +2,7 @@
     @extend %section;
 }
 
-.clients__container {
-    @extend %container;
-}
-
-.clients__heading {
+.section-heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -33,7 +29,7 @@
     width: 100%;
     height: 100%;
 
-    transition: fill var(--anim-duration) var(--anim-ttf), border-color var(--anim-duration) var(--anim-ttf);
+    transition: fill $animation-duration $animation-ttf, border-color $animation-duration $animation-ttf;
 
 
     fill: $icon_color;
